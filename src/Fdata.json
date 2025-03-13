@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "titre": "Formation React.js",
+    "description": "Cette formation intensive en React.js vous plonge dans l'univers du développement d'applications web modernes et réactives. Vous apprendrez à concevoir et implémenter des interfaces utilisateurs dynamiques en exploitant les hooks, le context API, et la gestion avancée de l'état. Grâce à une approche combinant théorie approfondie et ateliers pratiques, cette formation vous permet d'appréhender le cycle complet d'un projet React, de l'initialisation à la mise en production. Vous découvrirez aussi les meilleures pratiques et les schémas d'architectures éprouvés pour des applications évolutives et performantes.",
+    "duree": "3 jours",
+    "dateDebut": "2023-11-15",
+    "prix": "500000 FCFA",
+    "niveau": "Intermédiaire",
+    "avis": "Les participants saluent la pédagogie experte et les nombreux exemples concrets qui facilitent l'assimilation des concepts complexes.",
+    "objectif": "Développer les compétences nécessaires pour concevoir des applications web robustes et évolutives en utilisant React.js, en mettant l'accent sur la réactivité et la gestion optimale de l'état.",
+    "perspective": "À l'issue de la formation, vous serez en mesure de piloter des projets front-end innovants dans des environnements exigeants et bénéficier d'une reconnaissance forte sur le marché de l'emploi.",
+    "opportunité": "Intégrer des équipes de développement web de haut niveau, participer à des projets innovants et demeurer à la pointe des technologies du front-end.",
+    "debouche": "Poste de Développeur Front-End, Consultant en développement React, Ingénieur d'applications spécialisées dans les technologies JavaScript modernes."
+  },
+  {
+    "id": 2,
+    "titre": "Formation Node.js",
+    "description": "Cette formation approfondie en Node.js vous révèle les secrets du développement côté serveur avec JavaScript. Vous apprendrez à créer des API performantes, sécurisées et évolutives, tout en maîtrisant l'asynchronisme et les environnements orientés microservices. Grâce à des exercices pratiques basés sur des cas réels, vous comprendrez comment connecter votre application à des bases de données, implémenter des tests automatisés et assurer la scalabilité de vos services. Les concepts introduits vous permettront de transformer des idées novatrices en solutions concrètes, prêtes pour le déploiement en production.",
+    "duree": "2 jours",
+    "dateDebut": "2023-12-05",
+    "prix": "350000 FCFA",
+    "niveau": "Débutant à intermédiaire",
+    "avis": "Les retours sont très positifs, mettant en avant la richesse des exemples et la clarté des explications techniques.",
+    "objectif": "Permettre aux participants de maîtriser l'environnement Node.js pour concevoir des services backend fiables et performants, tout en découvrant les meilleures pratiques du développement d'API.",
+    "perspective": "Cette formation vous ouvre les portes d'une carrière dans le développement backend, avec la possibilité d'évoluer rapidement vers des postes à haute responsabilité technique.",
+    "opportunité": "Rejoindre des équipes dynamiques dans des start-ups, des agences web ou des grandes entreprises à la recherche de spécialistes en développement Node.js.",
+    "debouche": "Développeur Backend, Ingénieur Node.js, Consultant en développement de solutions serverless et architecte d'API."
+  },
+  {
+    "id": 3,
+    "titre": "Formation Data Analytics",
+    "description": "Plongez dans le monde passionnant de l'analyse de données avec cette formation complète en Data Analytics. Vous apprendrez à manipuler des ensembles de données volumineux et variés, à utiliser des outils de visualisation performants et à appliquer des techniques de machine learning pour en extraire des insights actionnables. La formation couvre aussi bien les aspects théoriques que pratiques, en mettant en œuvre des cas d'usage réels qui vous permettront de transformer les données en avantage stratégique pour les entreprises.",
+    "duree": "4 jours",
+    "dateDebut": "2024-01-10",
+    "prix": "700000 FCFA",
+    "niveau": "Avancé",
+    "avis": "Les participants apprécient la profondeur des contenus et l'accent mis sur l'application concrète dans des contextes professionnels variés.",
+    "objectif": "Acquérir les compétences essentielles pour analyser, interpréter et visualiser les données de manière efficace afin d'aider à la prise de décisions stratégiques.",
+    "perspective": "Se positionner en expert de la donnée dans un marché en pleine expansion, où la capacité à exploiter l'information est un atout majeur pour toute organisation.",
+    "opportunité": "Accéder à des postes dans des secteurs variés tels que la finance, le marketing, la santé ou l'industrie, où les données jouent un rôle central dans l'innovation et l'efficacité opérationnelle.",
+    "debouche": "Data Analyst, Data Scientist, Consultant en Intelligence Artificielle et Business Intelligence, Responsable de la stratégie data."
+  },
+  {
+    "id": 4,
+    "titre": "Formation Marketing Digital",
+    "description": "Cette formation en Marketing Digital offre une immersion complète dans les stratégies et outils qui régissent la communication en ligne d'aujourd'hui. Vous découvrirez les techniques pour optimiser le SEO, gérer efficacement les réseaux sociaux et concevoir des campagnes publicitaires innovantes. Grâce à une approche mêlant théorie et ateliers pratiques, vous apprendrez à analyser le comportement des utilisateurs en ligne, à mesurer le retour sur investissement des campagnes et à adapter vos stratégies pour maximiser leur impact. Cela vous permettra de créer des valeurs ajoutées et de fidéliser votre audience de manière durable.",
+    "duree": "2 jours",
+    "dateDebut": "2024-02-05",
+    "prix": "400000 FCFA",
+    "niveau": "Débutant",
+    "avis": "La formation a été saluée pour son approche pragmatique, permettant aux participants de mettre rapidement en pratique les concepts abordés.",
+    "objectif": "Donner aux participants les clés pour élaborer et mettre en œuvre des stratégies de marketing digital efficaces, en s'appuyant sur des données concrètes et des retours d'expérience terrain.",
+    "perspective": "Évoluer vers des postes stratégiques en marketing numérique, où la compréhension fine des comportements en ligne est essentielle pour le développement commercial.",
+    "opportunité": "Créer et piloter des campagnes de communication digitales, travailler en freelance ou intégrer des équipes marketing au sein d'entreprises innovantes.",
+    "debouche": "Responsable Marketing Digital, Community Manager, Consultant en stratégie digitale, Spécialiste SEO/SEM."
+  }
+]
