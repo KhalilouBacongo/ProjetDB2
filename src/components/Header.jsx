@@ -1,17 +1,18 @@
-import { useState, useEffect } from "react";
-import { X, Menu } from "react-feather";
-import { Link, NavLink } from "react-router";
-import np from "../assets/np.png";
+import { useState, useEffect } from "react"; // Importation des hooks React
+import { X, Menu, User } from "react-feather"; // Importation des icônes
+import { Link, NavLink } from "react-router"; // Importation des composants de navigation
+import np from "../assets/np.png"; // Importation du logo
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // État pour le menu mobile
 
   const navLinks = [
     { path: "/", label: "Accueil" },
     { path: "/services", label: "Services" },
     { path: "/formation", label: "Formation" },
-    { path: "contact", label: "Contact" },
-    { path: "apropos", label: "À Propos" },
+    { path: "/blogs", label: "Blogs" },
+    { path: "/contact", label: "Contact" },
+    { path: "/apropos", label: "À Propos" },
   ];
 
   useEffect(() => {
@@ -26,7 +27,6 @@ const Header = () => {
     };
 
     document.addEventListener("mousedown", handleClickOutside);
-
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -34,32 +34,44 @@ const Header = () => {
 
   return (
     <div className="relative z-50">
-      <nav className="fixed z-50 top-0 left-0 right-0 flex w-full h-[60px] bg-transparent backdrop-blur-md justify-between items-center shadow px-6 md:px-16">
-        <Link to={"/"} className="pt-1">
+      {/* Barre de navigation */}
+      <nav className="fixed top-0 left-0 right-0 flex w-full h-[60px] bg-transparent backdrop-blur-md justify-between items-center shadow px-6 md:px-16">
+        {/* Logo aligné à gauche */}
+        <Link to="/" className="pt-1">
           <img
             src={np}
             alt="Logo"
-            className="w-[120px] h-[120px] md:w-[155px] md:h-[155px]"
+            className="w-[130px] h-[130px] md:w-[138px] md:h-[138px]"
           />
         </Link>
-        <ul className="hidden md:flex items-center gap-[40px] text-[18px] font-medium">
-          {navLinks.map(({ path, label }, index) => (
-            <li key={index}>
-              <NavLink
-                to={path}
-                className={({ isActive }) =>
-                  `inline-block text-center hover:tracking-[3px] transition-all duration-[0.3s] relative after:block after:h-[2px] after:w-0 after:bg-red-600 after:transition-all after:duration-300 hover:after:w-full ${
-                    isActive ? "text-red-700" : " text-gray-400"
-                  }`
-                }
-              >
-                {label}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
 
-        {/* Menu Mobile Button */}
+        {/* Navigation Desktop + Icône User */}
+        <div className="hidden md:flex items-center gap-[30px] text-[17px] font-medium">
+          {navLinks.map(({ path, label }, index) => (
+            <NavLink
+              key={index}
+              to={path}
+              className={({ isActive }) =>
+                `inline-block hover:tracking-[2px] transition-all duration-[0.3s] relative after:block after:h-[2px] after:w-0 after:bg-red-600 after:transition-all after:duration-300 hover:after:w-full ${
+                  isActive
+                    ? "text-red-700 font-bold text-[18px]"
+                    : "text-gray-400"
+                }`
+              }
+            >
+              {label}
+            </NavLink>
+          ))}
+          {/* Icône User pour l'inscription */}
+          <Link
+            to="/login"
+            className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300"
+          >
+            <User size={24} className="text-gray-600" />
+          </Link>
+        </div>
+
+        {/* Bouton Menu Mobile */}
         <button
           id="menuButton"
           onClick={() => setIsOpen(!isOpen)}
@@ -77,16 +89,17 @@ const Header = () => {
       {/* Menu Mobile */}
       <nav
         id="mobileMenu"
-        className={`fixed top-0 right-0 h-auto w-2/3 shadow-lg transform transition-transform duration-300 ease-in-out flex flex-col items-center space-y-6 py-6 px-6 z-50 ${
+        className={`fixed  top-0 right-0 h-auto w-2/3 shadow-lg transform transition-transform duration-300 ease-in-out flex flex-col items-center space-y-6 py-6 px-6 z-60 rounded-b-md ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } md:hidden border-l border-gray-200`}
+        } md:hidden border-gray-200`}
         style={{
           backdropFilter: "blur(20px)",
           background: "rgba(255, 255, 255, 0.6)",
         }}
       >
-        <Link to={"/"} className="pt-1">
-          <img src={np} alt="Logo" className="w-[150px] h-[150px]" />
+        {/* Logo dans le menu mobile */}
+        <Link to="/" className="-mt-5">
+          <img src={np} alt="Logo" className="w-[110px] h-[110px] -mb-12 " />
         </Link>
         <button
           onClick={() => setIsOpen(false)}
@@ -94,17 +107,28 @@ const Header = () => {
         >
           <X size={28} />
         </button>
+
+        {/* Liens du menu mobile */}
         {navLinks.map(({ path, label }) => (
           <NavLink
             key={path}
             to={path}
             onClick={() => setIsOpen(false)}
-            className="text-base font-medium text-gray-900 hover:text-red-700 w-full text-center py-3 rounded-lg"
+            className="text-base text-[18px] text-center font-medium text-gray-900 hover:text-red-700 w-full py-3 rounded-lg"
             style={{ background: "rgba(255, 255, 255, 0.4)" }}
           >
             {label}
           </NavLink>
         ))}
+
+        {/* Icône User dans le menu mobile */}
+        <Link
+          to="/login"
+          onClick={() => setIsOpen(false)}
+          className="p-3 rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 flex items-center justify-center"
+        >
+          <User size={28} className="text-gray-600" />
+        </Link>
       </nav>
     </div>
   );

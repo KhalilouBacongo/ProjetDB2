@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import np from "../assets/np.png";
+import NP1 from "../assets/NP1.png";
 import Sbanner from "../assets/Sbanner.mp4";
 import {
   faLaptopCode,
@@ -188,12 +188,12 @@ const Services = () => {
 
         <div className="absolute inset-0 z-20 flex items-center justify-center">
           <motion.img
-            src={np}
+            src={NP1}
             alt="Logo de DECIDE AND BUILD"
-            className="mx-auto w-[650px] h-auto opacity-100"
+            className="mx-auto w-[230px] h-auto opacity-100"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 10 }}
           />
         </div>
       </div>

@@ -104,14 +104,14 @@ const Contact = () => {
 
         {/* Texte animé qui apparaît après 30s */}
         <div
-          className="absolute  inset-0 z-20 flex items-center justify-center"
+          className="absolute inset-0 z-20 flex items-center justify-center px-4"
           style={{
             animation: "fadeInOut 10s ease-in-out infinite",
             animationDelay: "30s",
           }}
         >
           <motion.h2
-            className="text-[50px] text-white font-bold lex items-center justify-center"
+            className="text-white font-bold text-center sm:text-left text-4xl sm:text-5xl md:text-6xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}

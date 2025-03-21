@@ -1,15 +1,19 @@
 {
+  "homepage": "https://KhalilouBacongo.github.io/ProjetDB2",
   "name": "projetdb",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
@@ -17,8 +21,10 @@
     "@shadcn/ui": "^0.0.4",
     "@tailwindcss/vite": "^4.0.11",
     "chart.js": "^4.4.8",
+    "firebase": "^11.4.0",
     "font-awesome": "^4.7.0",
     "framer-motion": "^12.4.10",
+    "gh-pages": "^6.3.0",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.479.0",
     "react": "^19.0.0",
@@ -26,6 +32,7 @@
     "react-dom": "^19.0.0",
     "react-feather": "^2.0.10",
     "react-hook-form": "^7.54.2",
+    "react-hot-toast": "^2.5.2",
     "react-icons": "^5.5.0",
     "react-lottie": "^1.2.10",
     "react-router": "^7.2.0",
