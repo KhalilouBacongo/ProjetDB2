@@ -14,10 +14,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <title>DECIDE&BUILD</title>
-    <script type="module" crossorigin src="/ProjetDB2/assets/index-DKLmd5_x.js"></script>
+    <script type="module" crossorigin src="/ProjetDB2/assets/index-DTl2ESFa.js"></script>
     <link rel="stylesheet" crossorigin href="/ProjetDB2/assets/index-CEP54hnr.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </body>
 </html>
